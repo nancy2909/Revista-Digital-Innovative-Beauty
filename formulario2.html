@@ -4,222 +4,75 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link  type="imagen/x-icon" href="cara(1).ico"/>
+
 
 <style type="text/css">
 body{
-background-color:		#BCFFEF;
+background-image: url(fondo4.jpg);
+background-size: 100% 100%;
+background-attachment: fixed;
+
 }
 h1{
 text-align:center;
-color:#EB2561;
+color:#DF7401;
+}
+p{
+text-align:center;
 }
 
-<head>
+</head>
 </style>
 
 <body>
-<form action="http://localhost/kenia.php" method="post">
+<form action="formulario2.php" method="post">
 
-Ingrese su nombre:
+INGRESE SU NOMBRE:
  <input type="text"  placeholder="Escribe tu nombre"  name="nombre"/>
 <br></br>
 
-Email:
+ESCRIBE TU CORREO ELECTRONICO:
 <input type="text"  placeholder="Escribe tu correo electronico"  name="correo" type="email"/>
-
-<input type="password" placeholder="Escribe tu contraseña" name="pwd"/>
 <br></br>
-
-Persona:
-<input type="radio"  name="persona" value="trabajador" checked="checked" />Trabajador
-<input type="radio"  name="persona" value="cliente" />Cliente
+DIRECCION A DONDE SERA ENVIADO TU PEDIDO:
+<input type="text" placeholder="Escribe la direccion a donde cera enviado tu pedido" name="dirrecion">
 <br></br>
-
-Direccion al que sera enviado el pedido:
-
-<select name="pais"  id="" >
-<option value="Mexico">Mexico</option>
-<option value="Centro de morelos">Centro de morelos</option>
-<option value="Cuervaca">Cuervaca</option>
-<option value="Temixco">Temixco</option>
-<option value="Zapata">Zapata</option>
-<option value="Pueblo viejo">Pueblo viejo</option>
-<option value="Cuautla">Cuautla</option>
-<option value="Xoxococla">Xoxococla</option>
-<option value="Puebla">Puebla</option>
-</select>
+ESCRIBE TU PAIS DE REGIÓN:
+<input type="text" placeholder="Escribe el pais de tu region" name="pais">
 <br></br>
-
-Elija su pedido:
-
-<select name=""  id="">
-<option value="LABIAL">LABIAL</option> <input type="color" name="color" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="labiales"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+<strong><h2>"ELIJE TU PEDIDO:"</h2></strong>
+LABIALES:
+<input type="text" placeholder="Escribe la cantidad de labiales" name="labiales">
+<input type="text" placeholder="Escribe el color de tu labial" name="color">
 <br></br>
-
-<select name=""  id="">
-<option value="POLVOS">POLVOS</option> <input type="color" name="color2" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="polvos"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+POLVOS:
+<input type="text" placeholder="Escribe la cantidad de polvos" name="polvos">
+<input type="text" placeholder="Escribe el color del polvo" name="color1">
 <br></br>
-
-<select name=""  id="">
-<option value="RUBOR">RUBOR</option> <input type="color" name="color3" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="rubor"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+RUBOR:
+<input type="text" placeholder="Escribe la cantidad de Rubores" name="rubor">
+<input type="text" placeholder="Escribe el color de tu Rubor" name="color2">
 <br></br>
-
-<select name=""  id="">
-<option value="SOMBRAS">SOMBRAS</option> <input type="color" name="color4" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="sombras"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+ILUMINADOR:
+<input type="text" placeholder="Escribe la cantidad de iluminador" name="iluminador">
+<input type="text" placeholder="Escribe el color de tu iluminador" name="color3">
 <br></br>
-
-<select name=""  id="">
-<option value="ILUMINADOR"> ILUMINADOR</option>  <input type="color" name="color5" id="">
-
-</select>
-<br></br> 
-Cantidad:
-<select name="iluminador"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+CREMA:
+<input type="text" placeholder="Escribe la cantidad de cremas" name="crema">
 <br></br>
-
-<select name=""  id="">
-<option value="CREMA">CREMA HIDDRATANTE</option>  <input type="color" name="color6" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="crema"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+MASCARA DE PESTAÑAS:
+<input type="text" placeholder="Escribe la cantidad de mascaras de pestañas" name="mascara">
+<input type="text" placeholder="Escribe el color de tu mascara" name="color5">
 <br></br>
-
-<select name=""  id="">
-<option value="MASCARA">MASCARA DE PESTAÑAS</option>  <input type="color" name="color7" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="mascara"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
-<br></br>
-
-
-<select name=""  id="">
-<option value="CORRECTOR">CORRECTOR</option>  <input type="color" name="color8" id="">
-</select>
-<br></br> 
-Cantidad:
-<select name="corrector"  id="">
-<option value="0">0</option>
-<option value="1">1</option> 
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-<option value="10">10</option>
-</select>
+CORRECTOR:
+<input type="text" placeholder="Escribe la cantidad de corrector" name="corrector">
 <br></br>
 <input type="submit" name="Enviar" value="Enviar pedido"/>
-
 <input type="reset" name="limpiar" value="Borrar datos del formulario"/>
 </form>
-<h1>LE AGRADECEMOS SU COMPRA, VUELVA PRONTO</h1>
-<p> KENIA NAIROBI HERRERA PEREDO</p> 
-
+<strong><p>Para obtener mas Información sobre su pedido, favor de comunicarte al siguiente Num.telefonico: </p></strong>
+<strong><p>TEL. 5560395839</p></strong>
+<h1>LE AGRADECEMOS SU COMPRA</h1>
+<td><li> <a href="precio.html">CONOCE LOS PRECIOS DE NUESTROS PRODUCTOS</td>
 </body>
 </html>
